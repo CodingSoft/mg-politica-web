@@ -1,0 +1,5 @@
+# Maintenance cron job for MG-Firma Legal
+# Add to crontab: 0 * * * * docker exec mg-firma-legal python3 /app/backend/open_webui/db_optimize.py
+
+# This runs database optimization every hour to prevent WAL bloat
+# and maintain optimal performance
