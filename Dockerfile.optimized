@@ -1,0 +1,31 @@
+# MG-Firma Legal - Optimized Production Image
+# Includes performance fixes for slow loading issue
+
+FROM ghcr.io/open-webui/open-webui:main
+
+LABEL description="MG-Firma Legal - Optimized version with performance fixes"
+LABEL version="1.0-performance-fix"
+
+# Copy performance middleware
+COPY backend/open_webui/middleware /app/backend/open_webui/middleware/
+
+# Copy optimized startup script
+COPY backend/open_webui/start_optimized.sh /app/backend/open_webui/start_optimized.sh
+RUN chmod +x /app/backend/open_webui/start_optimized.sh
+
+# Copy custom static files (logos, etc.)
+COPY build/static/ /app/build/static/
+COPY backend/open_webui/static/ /app/backend/open_webui/static/
+
+# Set environment variables
+ENV WEBUI_NAME="MG-Firma Legal"
+ENV ENABLE_SIGNUP=false
+ENV DEFAULT_USER_ROLE=user
+ENV ENABLE_COMMUNITY_SHARING=false
+ENV ENABLE_RAG_WEB_SEARCH=true
+
+# Expose port
+EXPOSE 8080
+
+# Use optimized startup script
+CMD ["bash", "/app/backend/open_webui/start_optimized.sh"]
