@@ -1,0 +1,45 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradiente dorado -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B8860B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradiente metálico -->
+    <linearGradient id="metallicGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F4E5B3;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#DAA520;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B8860B;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#DAA520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F4E5B3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo circular con gradiente dorado -->
+  <circle cx="256" cy="256" r="245" fill="url(#metallicGold)" stroke="#B8860B" stroke-width="8"/>
+  <circle cx="256" cy="256" r="235" fill="none" stroke="#FFD700" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Letras MG estilizadas -->
+  <g fill="url(#metallicGold)" stroke="#8B6914" stroke-width="2">
+    <!-- Letra M -->
+    <path d="M 140 180 L 140 340 L 180 340 L 180 240 L 256 300 L 332 240 L 332 340 L 372 340 L 372 180 L 332 180 L 256 240 L 180 180 Z"/>
+    
+    <!-- Letra G -->
+    <path d="M 260 260 C 260 260 260 320 320 320 C 360 320 385 295 385 260 L 385 235 C 385 200 360 175 320 175 C 280 175 255 200 255 235 L 255 250 L 290 250 L 290 235 C 290 220 300 210 320 210 C 340 210 350 220 350 235 L 350 260 C 350 280 340 290 320 290 C 300 290 290 280 290 260 L 260 260 Z"/>
+  </g>
+  
+  <!-- Silueta de perro (pastor alemán) - simplificada -->
+  <g fill="url(#metallicGold)" stroke="#8B6914" stroke-width="1.5" transform="translate(270, 155) scale(0.5)">
+    <!-- Cabeza de perro -->
+    <path d="M 85 25 C 85 25 95 15 105 15 C 115 15 125 25 125 45 C 125 65 115 85 105 95 C 95 105 85 105 85 105 L 85 25 Z"/>
+    <!-- Oreja -->
+    <path d="M 95 30 L 100 15 L 105 30 Z" fill="#FFD700"/>
+    <!-- Collar -->
+    <path d="M 85 75 Q 105 85 125 75" stroke="#FFD700" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Brillo -->
+  <circle cx="180" cy="180" r="40" fill="white" opacity="0.15"/>
+</svg>

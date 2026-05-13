@@ -2,27 +2,27 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/png" href="/static/favicon.png" crossorigin="use-credentials" />
-		<link
-			rel="icon"
-			type="image/png"
-			href="/static/favicon-96x96.png"
-			sizes="96x96"
-			crossorigin="use-credentials"
-		/>
-		<link
-			rel="icon"
-			type="image/svg+xml"
-			href="/static/favicon.svg"
-			crossorigin="use-credentials"
-		/>
-		<link rel="shortcut icon" href="/static/favicon.ico" crossorigin="use-credentials" />
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="/static/apple-touch-icon.png"
-			crossorigin="use-credentials"
-		/>
+<link rel="icon" type="image/png" href="/favicon.png?v=mg-firma-legal" crossorigin="use-credentials" />
+<link
+  rel="icon"
+  type="image/png"
+  href="/favicon-96x96.png?v=mg-firma-legal"
+  sizes="96x96"
+  crossorigin="use-credentials"
+/>
+<link
+  rel="icon"
+  type="image/svg+xml"
+  href="/favicon.svg?v=mg-firma-legal"
+  crossorigin="use-credentials"
+/>
+<link rel="shortcut icon" href="/favicon.ico?v=mg-firma-legal" crossorigin="use-credentials" />
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/apple-touch-icon.png?v=mg-firma-legal"
+  crossorigin="use-credentials"
+/>
 		<link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
 		<meta
 			name="viewport"
@@ -31,8 +31,8 @@
 		<meta name="theme-color" content="#171717" />
 		<meta name="robots" content="noindex,nofollow" />
 
-		<script src="/static/loader.js" defer crossorigin="use-credentials"></script>
-		<link rel="stylesheet" href="/static/custom.css" crossorigin="use-credentials" />
+<script src="/loader.js" defer crossorigin="use-credentials"></script>
+<link rel="stylesheet" href="/custom.css" crossorigin="use-credentials" />
 
 		<script>
 			function resizeIframe(obj) {
@@ -71,9 +71,9 @@
 					metaThemeColorTag.setAttribute('content', '#171717');
 				}
 
-				const preloadHref = document.documentElement.classList.contains('dark')
-					? '/static/splash-dark.png'
-					: '/static/splash.png';
+const preloadHref = document.documentElement.classList.contains('dark')
+  ? '/splash-dark.png'
+  : '/splash.png';
 				const preload = document.createElement('link');
 				preload.rel = 'preload';
 				preload.as = 'image';
@@ -102,7 +102,7 @@
 					'position: absolute; width: auto; height: 6rem; top: 44%; left: 50%; transform: translateX(-50%); display:block;';
 				logo.loading = 'eager';
 				logo.fetchPriority = 'high';
-				logo.src = isDarkMode ? '/static/splash-dark.png' : '/static/splash.png';
+				logo.src = isDarkMode ? '/splash-dark.png' : '/splash.png';
 
 				document.addEventListener('DOMContentLoaded', function () {
 					const splash = document.getElementById('splash-screen');
@@ -115,7 +115,7 @@
 			})();
 		</script>
 
-		<title>Open WebUI</title>
+		<title>MG-Firma Legal</title>
 
 		%sveltekit.head%
 	</head>
@@ -147,14 +147,14 @@
 					align-items: center;
 				"
 			>
-				<img
-					id="logo-her"
-					style="width: auto; height: 13rem"
-					src="/static/splash.png"
-					loading="eager"
-					fetchpriority="high"
-					class="animate-pulse-fast"
-				/>
+<img
+  id="logo-her"
+  style="width: auto; height: 13rem"
+  src="/splash.png"
+  loading="eager"
+  fetchpriority="high"
+  class="animate-pulse-fast"
+/>
 
 				<div style="position: relative; width: 24rem; margin-top: 0.5rem">
 					<div

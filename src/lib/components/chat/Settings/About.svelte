@@ -60,18 +60,18 @@
 							v{WEBUI_VERSION}
 						</Tooltip>
 
-						{#if $config?.features?.enable_version_update_check}
-							<a
-								href="https://github.com/open-webui/open-webui/releases/tag/v{version.latest}"
-								target="_blank"
-							>
-								{updateAvailable === null
-									? $i18n.t('Checking for updates...')
-									: updateAvailable
-										? `(v${version.latest} ${$i18n.t('available!')})`
-										: $i18n.t('(latest)')}
-							</a>
-						{/if}
+{#if $config?.features?.enable_version_update_check}
+<a
+  href="https://github.com/CodingSoft/mg-politica-web/releases"
+  target="_blank"
+>
+  {updateAvailable === null
+    ? $i18n.t('Checking for updates...')
+    : updateAvailable
+    ? `(v${version.latest} ${$i18n.t('available!')})`
+    : $i18n.t('(latest)')}
+</a>
+{/if}
 					</div>
 
 					<button
@@ -122,28 +122,14 @@
 				<span class=" capitalize">{$config?.license_metadata?.organization_name}</span>
 			</div>
 		{:else}
-			<div class="flex space-x-1">
-				<a href="https://discord.gg/5rJgQTnV4s" target="_blank">
-					<img
-						alt="Discord"
-						src="https://img.shields.io/badge/Discord-Open_WebUI-blue?logo=discord&logoColor=white"
-					/>
-				</a>
-
-				<a href="https://twitter.com/OpenWebUI" target="_blank">
-					<img
-						alt="X (formerly Twitter) Follow"
-						src="https://img.shields.io/twitter/follow/OpenWebUI"
-					/>
-				</a>
-
-				<a href="https://github.com/open-webui/open-webui" target="_blank">
-					<img
-						alt="Github Repo"
-						src="https://img.shields.io/github/stars/open-webui/open-webui?style=social&label=Star us on Github"
-					/>
-				</a>
-			</div>
+<div class="flex space-x-1">
+  <a href="https://github.com/CodingSoft/mg-politica-web" target="_blank">
+    <img
+      alt="Github Repo"
+      src="https://img.shields.io/github/stars/open-webui/open-webui?style=social&label=Star us on Github"
+    />
+  </a>
+</div>
 		{/if}
 
 		<div class="mt-2 text-xs text-gray-400 dark:text-gray-500">
@@ -153,14 +139,14 @@
 		</div>
 
 		<div>
-			<pre
-				class="text-xs text-gray-400 dark:text-gray-500">Copyright (c) {new Date().getFullYear()} <a
-					href="https://openwebui.com"
-					target="_blank"
-					class="underline">Open WebUI Inc.</a
-				> <a href="https://github.com/open-webui/open-webui/blob/main/LICENSE" target="_blank"
-					>All rights reserved.</a
-				>
+<pre
+  class="text-xs text-gray-400 dark:text-gray-500">Copyright (c) {new Date().getFullYear()} <a
+  href="https://codingsoft.mx"
+  target="_blank"
+  class="underline">CodingSoft</a
+> <a href="https://github.com/CodingSoft/mg-politica-web/blob/main/LICENSE" target="_blank"
+  >All rights reserved.</a
+>
 </pre>
 		</div>
 

@@ -1,31 +1,30 @@
-# Open WebUI 👋
+# MG-Firma Legal 👋
 
-![GitHub stars](https://img.shields.io/github/stars/open-webui/open-webui?style=social)
-![GitHub forks](https://img.shields.io/github/forks/open-webui/open-webui?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/open-webui/open-webui?style=social)
-![GitHub repo size](https://img.shields.io/github/repo-size/open-webui/open-webui)
-![GitHub language count](https://img.shields.io/github/languages/count/open-webui/open-webui)
-![GitHub top language](https://img.shields.io/github/languages/top/open-webui/open-webui)
-![GitHub last commit](https://img.shields.io/github/last-commit/open-webui/open-webui?color=red)
-[![Discord](https://img.shields.io/badge/Discord-Open_WebUI-blue?logo=discord&logoColor=white)](https://discord.gg/5rJgQTnV4s)
-[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/tjbck)
+![GitHub stars](https://img.shields.io/github/stars/codingsoft/mg-firma-legal?style=social)
+![GitHub forks](https://img.shields.io/github/forks/codingsoft/mg-firma-legal?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/codingsoft/mg-firma-legal?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/codingsoft/mg-firma-legal)
+![GitHub language count](https://img.shields.io/github/languages/count/codingsoft/mg-firma-legal)
+![GitHub top language](https://img.shields.io/github/languages/top/codingsoft/mg-firma-legal)
+![GitHub last commit](https://img.shields.io/github/last-commit/codingsoft/mg-firma-legal?color=red)
+[![Soporte](https://img.shields.io/badge/Soporte-MG_Firma_Legal-blue?logo=email&logoColor=white)](mailto:soporte@mg-firma-legal.com)
 
-![Open WebUI Banner](./banner.png)
+![MG-Firma Legal Banner](./banner.png)
 
-**Open WebUI is an [extensible](https://docs.openwebui.com/features/extensibility/plugin), feature-rich, and user-friendly self-hosted AI platform designed to operate entirely offline.** It supports various LLM runners like **Ollama** and **OpenAI-compatible APIs**, with **built-in inference engine** for RAG, making it a **powerful AI deployment solution**.
+**MG-Firma Legal es una plataforma de gestión legal con IA, basada en Open WebUI, diseñada para operar completamente offline.** Es compatible con diversos modelos de LLM como **Ollama** y **APIs compatibles con OpenAI**, con motor de inferencia integrado para RAG, lo que la convierte en una **potente solución de despliegue de IA para el sector legal**.
 
-Passionate about open-source AI? [Join our team →](https://careers.openwebui.com/)
+¿Interesado en IA de código abierto? [Visítanos →](https://mg-firma-legal.com)
 
-![Open WebUI Demo](./demo.png)
+![MG-Firma Legal Demo](./demo.png)
 
 > [!TIP]  
-> **Looking for an [Enterprise Plan](https://docs.openwebui.com/enterprise)?** – **[Speak with Our Sales Team Today!](https://docs.openwebui.com/enterprise)**
+> **¿Buscando un [Plan Empresarial](https://mg-firma-legal.com/enterprise)?** – **[¡Habla con Nuestro Equipo de Ventas hoy!](https://mg-firma-legal.com/enterprise)**
 >
-> Get **enhanced capabilities**, including **custom theming and branding**, **Service Level Agreement (SLA) support**, **Long-Term Support (LTS) versions**, and **more!**
+> Obtén **capacidades mejoradas**, incluyendo **temas y marca personalizados**, **Acuerdo de Nivel de Servicio (SLA)**, **Versiones de Soporte a Largo Plazo (LTS)**, y **más!**
 
-For more information, be sure to check out our [Open WebUI Documentation](https://docs.openwebui.com/).
+Para más información, visita nuestra [Documentación de MG-Firma Legal](https://docs.mg-firma-legal.com).
 
-## Key Features of Open WebUI ⭐
+## Características Principales de MG-Firma Legal ⭐
 
 - 🚀 **Effortless Setup**: Install seamlessly using Docker or Kubernetes (kubectl, kustomize or helm) for a hassle-free experience with support for both `:ollama` and `:cuda` tagged images.
 
@@ -87,86 +86,86 @@ We are incredibly grateful for the generous support of our sponsors. Their contr
 
 ### Installation via Python pip 🐍
 
-Open WebUI can be installed using pip, the Python package installer. Before proceeding, ensure you're using **Python 3.11** to avoid compatibility issues.
+MG-Firma Legal puede ser instalada usando pip, el gestor de paquetes de Python. Antes de continuar, asegúrate de usar **Python 3.11** para evitar problemas de compatibilidad.
 
-1. **Install Open WebUI**:
-   Open your terminal and run the following command to install Open WebUI:
-
-   ```bash
-   pip install open-webui
-   ```
-
-2. **Running Open WebUI**:
-   After installation, you can start Open WebUI by executing:
+1. **Instalar MG-Firma Legal**:
+   Abre tu terminal y ejecuta el siguiente comando:
 
    ```bash
-   open-webui serve
+   pip install mg-firma-legal
    ```
 
-This will start the Open WebUI server, which you can access at [http://localhost:8080](http://localhost:8080)
+2. **Ejecutar MG-Firma Legal**:
+   Después de la instalación, puedes iniciar MG-Firma Legal ejecutando:
+
+   ```bash
+   mg-firma-legal serve
+   ```
+
+Esto iniciara el servidor de MG-Firma Legal, al cual puedes acceder en [http://localhost:8080](http://localhost:8080)
 
 ### Quick Start with Docker 🐳
 
 > [!NOTE]  
-> Please note that for certain Docker environments, additional configurations might be needed. If you encounter any connection issues, our detailed guide on [Open WebUI Documentation](https://docs.openwebui.com/) is ready to assist you.
+> Para ciertos entornos de Docker, pueden ser necesarias configuraciones adicionales. Si experimentas problemas de conexión, nuestra guía detallada en [Documentación de MG-Firma Legal](https://docs.mg-firma-legal.com/) está disponible para ayudarte.
 
 > [!WARNING]
-> When using Docker to install Open WebUI, make sure to include the `-v open-webui:/app/backend/data` in your Docker command. This step is crucial as it ensures your database is properly mounted and prevents any loss of data.
+> Al usar Docker para instalar MG-Firma Legal, asegúrate de incluir `-v mg-firma-legal:/app/backend/data` en tu comando Docker. Este paso es crucial ya que asegura que tu base de datos esté correctamente montada y previene la pérdida de datos.
 
 > [!TIP]  
-> If you wish to utilize Open WebUI with Ollama included or CUDA acceleration, we recommend utilizing our official images tagged with either `:cuda` or `:ollama`. To enable CUDA, you must install the [Nvidia CUDA container toolkit](https://docs.nvidia.com/dgx/nvidia-container-runtime-upgrade/) on your Linux/WSL system.
+> Si deseas utilizar MG-Firma Legal con Ollama incluido o aceleración CUDA, recomendamos utilizar nuestras imágenes oficiales etiquetadas con `:cuda` o `:ollama`. Para habilitar CUDA, debes instalar el [Nvidia CUDA container toolkit](https://docs.nvidia.com/dgx/nvidia-container-runtime-upgrade/) en tu sistema Linux/WSL.
 
 ### Installation with Default Configuration
 
-- **If Ollama is on your computer**, use this command:
+- **Si Ollama está en tu computadora**, usa este comando:
 
   ```bash
-  docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+  docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v mg-firma-legal:/app/backend/data --name mg-firma-legal --restart always ghcr.io/codingsoft/mg-firma-legal:main
   ```
 
-- **If Ollama is on a Different Server**, use this command:
+- **Si Ollama está en un Servidor Diferente**, usa este comando:
 
-  To connect to Ollama on another server, change the `OLLAMA_BASE_URL` to the server's URL:
+  Para conectar a Ollama en otro servidor, cambia el `OLLAMA_BASE_URL` a la URL del servidor:
 
   ```bash
-  docker run -d -p 3000:8080 -e OLLAMA_BASE_URL=https://example.com -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+  docker run -d -p 3000:8080 -e OLLAMA_BASE_URL=https://example.com -v mg-firma-legal:/app/backend/data --name mg-firma-legal --restart always ghcr.io/codingsoft/mg-firma-legal:main
   ```
 
-- **To run Open WebUI with Nvidia GPU support**, use this command:
+- **Para ejecutar MG-Firma Legal con soporte Nvidia GPU**, usa este comando:
 
   ```bash
-  docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+  docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v mg-firma-legal:/app/backend/data --name mg-firma-legal --restart always ghcr.io/codingsoft/mg-firma-legal:cuda
   ```
 
 ### Installation for OpenAI API Usage Only
 
-- **If you're only using OpenAI API**, use this command:
+- **Si solo estás usando OpenAI API**, usa este comando:
 
   ```bash
-  docker run -d -p 3000:8080 -e OPENAI_API_KEY=your_secret_key -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+  docker run -d -p 3000:8080 -e OPENAI_API_KEY=your_secret_key -v mg-firma-legal:/app/backend/data --name mg-firma-legal --restart always ghcr.io/codingsoft/mg-firma-legal:main
   ```
 
-### Installing Open WebUI with Bundled Ollama Support
+### Installing MG-Firma Legal with Bundled Ollama Support
 
-This installation method uses a single container image that bundles Open WebUI with Ollama, allowing for a streamlined setup via a single command. Choose the appropriate command based on your hardware setup:
+Este método de instalación usa una imagen de contenedor única que agrupa MG-Firma Legal con Ollama, permitiendo una configuración simplificada a través de un solo comando. Elige el comando apropiado según tu hardware:
 
-- **With GPU Support**:
-  Utilize GPU resources by running the following command:
+- **Con Soporte GPU**:
+  Utiliza recursos GPU ejecutando el siguiente comando:
 
   ```bash
-  docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama
+  docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v mg-firma-legal:/app/backend/data --name mg-firma-legal --restart always ghcr.io/codingsoft/mg-firma-legal:ollama
   ```
 
-- **For CPU Only**:
-  If you're not using a GPU, use this command instead:
+- **Solo CPU**:
+  Si no estás usando una GPU, usa este comando en su lugar:
 
   ```bash
-  docker run -d -p 3000:8080 -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama
+  docker run -d -p 3000:8080 -v ollama:/root/.ollama -v mg-firma-legal:/app/backend/data --name mg-firma-legal --restart always ghcr.io/codingsoft/mg-firma-legal:ollama
   ```
 
-Both commands facilitate a built-in, hassle-free installation of both Open WebUI and Ollama, ensuring that you can get everything up and running swiftly.
+Ambos comandos facilitan una instalación integrada y sin complicaciones de MG-Firma Legal y Ollama, asegurando que puedas poner todo en marcha rápidamente.
 
-After installation, you can access Open WebUI at [http://localhost:3000](http://localhost:3000). Enjoy! 😄
+Después de la instalación, puedes acceder a MG-Firma Legal en [http://localhost:3000](http://localhost:3000). Disfruta! 😄
 
 ### Other Installation Methods
 
@@ -215,23 +214,22 @@ Discover upcoming features on our roadmap in the [Open WebUI Documentation](http
 
 ## License 📜
 
-This project contains code under multiple licenses. The current codebase includes components licensed under the Open WebUI License with an additional requirement to preserve the "Open WebUI" branding, as well as prior contributions under their respective original licenses. For a detailed record of license changes and the applicable terms for each section of the code, please refer to [LICENSE_HISTORY](./LICENSE_HISTORY). For complete and updated licensing details, please see the [LICENSE](./LICENSE) and [LICENSE_HISTORY](./LICENSE_HISTORY) files.
+Este proyecto contiene código bajo múltiples licencias. El código actual incluye componentes licenciados bajo la Licencia de Open WebUI con un requisito adicional de preservar la marca "Open WebUI", así como contribuciones previas bajo sus licencias originales respectivas. Para un registro detallado de los cambios de licencia y los términos aplicables para cada sección del código, por favor consulta [LICENSE_HISTORY](./LICENSE_HISTORY). Para detalles completos y actualizados de licencias, por favor consulta los archivos [LICENSE](./LICENSE) y [LICENSE_HISTORY](./LICENSE_HISTORY).
 
-## Support 💬
+## Soporte 💬
 
-If you have any questions, suggestions, or need assistance, please open an issue or join our
-[Open WebUI Discord community](https://discord.gg/5rJgQTnV4s) to connect with us! 🤝
+Si tienes alguna pregunta, sugerencia, o necesitas asistencia, por favor abre un issue o contactanos a través de nuestro correo de soporte: **soporte@mg-firma-legal.com** 🤝
 
 ## Star History
 
-<a href="https://star-history.com/#open-webui/open-webui&Date">
+<a href="https://star-history.com/#codingsoft/mg-firma-legal&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=open-webui/open-webui&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=open-webui/open-webui&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=open-webui/open-webui&type=Date" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=codingsoft/mg-firma-legal&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=codingsoft/mg-firma-legal&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=codingsoft/mg-firma-legal&type=Date" />
   </picture>
 </a>
 
 ---
 
-Created by [Timothy Jaeryang Baek](https://github.com/tjbck) - Let's make Open WebUI even more amazing together! 💪
+Creado por [CodingSoft](https://codingsoft.com.mx) - ¡Hagamos que MG-Firma Legal sea aún más amazing! 💪

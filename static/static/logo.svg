@@ -1,0 +1,18 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo circular dorado -->
+  <circle cx="256" cy="256" r="240" fill="none" stroke="#B8860B" stroke-width="32"/>
+  
+  <!-- Letras MG estilizadas -->
+  <g fill="#B8860B">
+    <!-- Letra M -->
+    <path d="M 120 160 L 120 352 L 160 352 L 160 220 L 256 304 L 352 220 L 352 352 L 392 352 L 392 160 L 352 160 L 256 248 L 160 160 Z"/>
+    
+    <!-- Letra G -->
+    <path d="M 256 280 C 256 280 256 352 336 352 C 384 352 416 320 416 272 L 416 240 C 416 192 384 160 336 160 C 288 160 256 192 256 240 L 256 256 L 296 256 L 296 240 C 296 216 312 200 336 200 C 360 200 376 216 376 240 L 376 272 C 376 296 360 312 336 312 C 312 312 296 296 296 272 L 256 272 Z"/>
+  </g>
+  
+  <!-- Silueta de perro (simplificada) -->
+  <g fill="#B8860B" transform="translate(280, 140) scale(0.6)">
+    <path d="M 80 20 C 80 20 90 10 100 10 C 110 10 120 20 120 40 C 120 60 110 80 100 90 C 90 100 80 100 80 100 L 80 20 Z"/>
+  </g>
+</svg>

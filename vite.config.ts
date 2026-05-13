@@ -4,29 +4,46 @@ import { defineConfig } from 'vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
-	plugins: [
-		sveltekit(),
-		viteStaticCopy({
-			targets: [
-				{
-					src: 'node_modules/onnxruntime-web/dist/*.jsep.*',
-
-					dest: 'wasm'
-				}
-			]
-		})
-	],
-	define: {
-		APP_VERSION: JSON.stringify(process.env.npm_package_version),
-		APP_BUILD_HASH: JSON.stringify(process.env.APP_BUILD_HASH || 'dev-build')
-	},
-	build: {
-		sourcemap: true
-	},
-	worker: {
-		format: 'es'
-	},
-	esbuild: {
-		pure: process.env.ENV === 'dev' ? [] : ['console.log', 'console.debug', 'console.error']
-	}
+  plugins: [
+    sveltekit(),
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'node_modules/onnxruntime-web/dist/*.jsep.*',
+          
+          dest: 'wasm'
+        },
+        // Copy static assets from backend to serve during development
+        {
+          src: 'backend/open_webui/static/*',
+          dest: 'static'
+        }
+      ]
+    })
+  ],
+  define: {
+    APP_VERSION: JSON.stringify(process.env.npm_package_version),
+    APP_BUILD_HASH: JSON.stringify(process.env.APP_BUILD_HASH || 'dev-build')
+  },
+  build: {
+    sourcemap: true
+  },
+  worker: {
+    format: 'es'
+  },
+  esbuild: {
+    pure: process.env.ENV === 'dev' ? [] : ['console.log', 'console.debug', 'console.error']
+  },
+  server: {
+    // Allow serving static files from backend directory
+    fs: {
+      allow: ['..']
+    },
+    proxy: {
+      '/static': {
+        target: '/',
+        rewrite: (path) => path.replace(/^\/static\//, '/'),
+      }
+    }
+  }
 });

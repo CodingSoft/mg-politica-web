@@ -8,25 +8,26 @@ services:
     restart: unless-stopped
     image: ollama/ollama:${OLLAMA_DOCKER_TAG-latest}
 
-  open-webui:
+  mg-firma-legal:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ghcr.io/open-webui/open-webui:${WEBUI_DOCKER_TAG-main}
-    container_name: open-webui
+    image: ghcr.io/codingsoft/mg-firma-legal:${WEBUI_DOCKER_TAG-main}
+    container_name: mg-firma-legal
     volumes:
-      - open-webui:/app/backend/data
+      - mg-firma-legal:/app/backend/data
     depends_on:
       - ollama
     ports:
-      - ${OPEN_WEBUI_PORT-3000}:8080
+      - ${MG_FIRMA_LEGAL_PORT-3000}:8080
     environment:
       - 'OLLAMA_BASE_URL=http://ollama:11434'
       - 'WEBUI_SECRET_KEY='
+      - 'WEBUI_NAME=MG-Firma Legal'
     extra_hosts:
       - host.docker.internal:host-gateway
     restart: unless-stopped
 
 volumes:
   ollama: {}
-  open-webui: {}
+  mg-firma-legal: {}
