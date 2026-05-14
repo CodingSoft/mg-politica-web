@@ -1,6 +1,6 @@
 import { browser, dev } from '$app/environment';
 
-export const APP_NAME = 'Open WebUI';
+export const APP_NAME = 'MG-Firma Legal';
 export const WEBUI_HOSTNAME = browser ? (dev ? `` : ``) : '';
 export const WEBUI_BASE_URL = browser ? (dev ? `` : ``) : '';
 export const WEBUI_API_BASE_URL = `${WEBUI_BASE_URL}/api/v1`;

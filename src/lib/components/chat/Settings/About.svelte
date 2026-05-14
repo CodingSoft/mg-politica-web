@@ -61,10 +61,7 @@
 						</Tooltip>
 
 {#if $config?.features?.enable_version_update_check}
-<a
-  href="https://github.com/CodingSoft/mg-politica-web/releases"
-  target="_blank"
->
+  <!-- Enlace de actualizaciones oculto -->
   {updateAvailable === null
     ? $i18n.t('Checking for updates...')
     : updateAvailable
@@ -126,7 +123,7 @@
   <a href="https://github.com/CodingSoft/mg-politica-web" target="_blank">
     <img
       alt="Github Repo"
-      src="https://img.shields.io/github/stars/open-webui/open-webui?style=social&label=Star us on Github"
+      src="https://img.shields.io/github/stars/CodingSoft/mg-politica-web?style=social&label=Star us on Github"
     />
   </a>
 </div>

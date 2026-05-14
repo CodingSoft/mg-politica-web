@@ -1,6 +1,6 @@
 {
-  "name": "Open WebUI",
-  "short_name": "WebUI",
+  "name": "MG-Firma Legal",
+  "short_name": "MG-Firma",
   "icons": [
     {
       "src": "/static/web-app-manifest-192x192.png",
