@@ -212,7 +212,7 @@
 
         <a
           class="flex-shrink-0 text-xs font-medium underline"
-          href="https://docs.openwebui.com/"
+          href="https://github.com/CodingSoft/mg-politica-web"
           target="_blank"
         >
           {$i18n.t('Documentation')}
