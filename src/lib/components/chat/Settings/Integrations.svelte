@@ -130,7 +130,7 @@
 					<div class="text-xs text-gray-600 dark:text-gray-300 mb-2">
 						<a
 							class="underline"
-							href="https://github.com/open-webui/openapi-servers"
+							href="https://github.com/CodingSoft/mg-politica-web"
 							target="_blank">{$i18n.t('Learn more about OpenAPI tool servers.')} ↗</a
 						>
 					</div>
@@ -153,7 +153,7 @@
 						<div class="text-xs text-gray-600 dark:text-gray-300 mt-1">
 							<a
 								class="underline"
-								href="https://github.com/open-webui/open-terminal"
+								href="https://github.com/CodingSoft/mg-politica-web"
 								target="_blank">{$i18n.t('Learn more about Open Terminal')} ↗</a
 							>
 						</div>

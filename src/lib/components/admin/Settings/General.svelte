@@ -221,12 +221,7 @@
 
 <div class="mt-1">
   <div class="flex space-x-1">
-    <a href="https://github.com/CodingSoft/mg-politica-web" target="_blank">
-      <img
-        alt="Github Repo"
-        src="https://img.shields.io/github/stars/open-webui/open-webui?style=social&label=Star us on Github"
-      />
-    </a>
+    <!-- Badge de GitHub eliminado -->
   </div>
 </div>
     </div>

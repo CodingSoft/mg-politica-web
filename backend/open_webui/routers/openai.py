@@ -168,8 +168,8 @@ async def get_headers_and_cookies(
         'Content-Type': 'application/json',
         **(
             {
-                'HTTP-Referer': 'https://openwebui.com/',
-                'X-Title': 'Open WebUI',
+                'HTTP-Referer': 'https://codingsoft.mx/',
+                'X-Title': 'MG-Firma Legal',
             }
             if 'openrouter.ai' in url
             else {}
